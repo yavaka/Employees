@@ -15,6 +15,7 @@ else
                 <th>Employee ID</th>
                 <th>First name</th>
                 <th>Last name</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +26,9 @@ else
                     <td>@employee.EmployeeId</td>
                     <td>@employee.FirstName</td>
                     <td>@employee.LastName</td>
+                    <td>
+                        <a href="@($"employeedetail/{employee.EmployeeId}")" class="btn btn-primary table-btn">Detail</a>
+                    </td>
                 </tr>
             }
         </tbody>
